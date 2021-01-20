@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/img/Olhinho-azul.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Effra"/>
+    <link href="/css/Comic.css" rel='stylesheet'/>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    
+    <title>Cadastro de Revendedores</title>
+</head>
+<body>
+    <div id="container">
+        <header class="row">
+            <div class="navbar navbar-expand-md navbar-dark bd-navbar col-sm-12" style="background-color:#676AA4; padding:20px;">
+                <b style="font-size:2vw; color: rgb(255, 255, 255); padding-left: 40%;">SEJA UM REVENDEDOR</b>
+                <img src="/img/Olho.png" width="45" height="35" style="margin-left: 0.3%;"/>
+                
+            </div>
+        </header>
+
+        <section>
+            <div class="row">
+                <!--Box Info-->
+                <div class="col-sm-6" id="info" >
+                    <div>
+                        <div>
+                            <h1>
+                                RECEBA O SEU GUIA DE REVENDEDOR E COMECE A LUCRAR COM A PUPPA.
+                            </h1>
+                        </div>
+
+                            <div class="group">
+                                <img id="DivA" class="img" src="/img/Group 2.png" alt="01">
+                                <div id="DivB">
+                                    <h3>Faça seu cadastro online</h3>
+                                    <p >Preencha o formulário e dê o seu primeiro passo para conquistar sua independencia financeira</p>
+                                </div>
+                                
+                            </div>
+
+                            <div class="group">
+                                <img id="DivA" class="img" src="/img/Group 3.png" alt="01">
+                                <div id="DivB">
+                                    <h3 >Aguarde o contato no seu email</h3>
+                                    <p>Assim que fizer o cadastro, nossa equipe entrará em contato para validação</p>
+                                </div>
+                            </div>
+
+                            <div class="group">
+                                <img id="DivA" class="img" src="/img/Group 4.png" alt="01">
+                                <div id="DivB">
+                                    <h3>Pronto!</h3>
+                                    <p>Com o cadastro validado você já pode começar a vender e ganhar dinheiro com a Puppa.</p>
+                                </div>
+                            </div>
+                        
+                            
+                        
+                    </div>
+                  
+                </div>
+                <!--Box de cadastro-->
+                <div id="box" class="col-sm-6">
+                  <div id="cadastro" class="col-sm-12">
+              
+                        <h3 id="m_h6">FAÇA SEU CADASTRO ONLINE E RECEBA O GUIA DO REVENDEDOR POR APENAS R$ 25,00</h3>
+
+                        <%if(message!=null && message!=""){%>
+                        <div class="alert alert-warning alert-danger fade show" role="alert">
+                            <%=message%>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                       <%}%>
+                        <form id="form-rev" action="/register/revendedor" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="nome" placeholder="Nome">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="endereco" placeholder="Endereco">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="estadocivil" placeholder="Estado Civil"> 
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="escolaridade" placeholder="Escolaridade"> 
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="fontederenda" placeholder="Possui outra renda?">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="celular" name="celular" placeholder="Celular">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="iswhatsapp" name="iswhatsapp">
+                                <label class="form-check-label" for="iswhatsapp"> Esse é meu numero de Whatsapp.</label>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" id="btn-cad" class="btn btn-primary col-sm-6">Cadastrar</button>
+                            </div>
+    
+                      </form>
+                  </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </div>
+
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+    <script type="text/javascript">
+    
+
+        $("#celular").mask("(00) 00000-0000");
+        $("#cpf").mask("000.000.000-00");
+    </script>
+</body>
+</html>

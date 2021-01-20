@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/img/Olhinho-azul.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Effra"/>
+    <link href="/css/Comic.css" rel='stylesheet'/>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    
+    <title>Login</title>
+</head>
+<body>
+    <div id="container">
+        <header class="row">
+            <div class="navbar navbar-expand-md navbar-dark bd-navbar col-sm-12" style="background-color:#676AA4; padding:20px;">
+                <b style="font-size:2vw; color: rgb(255, 255, 255); margin-left: 43%; text-align: center;">AREA PRIVADA</b>
+                <img src="/img/Olho.png" width="45" height="35" style="margin-left: 0.3%;"/>
+            </div>
+        </header>
+
+                <!--Box de login-->
+                <div id="box-login" class="offset-sm-3 col-sm-6 offset-sm-3">
+                  <div id="cadastro" class="col-sm-12">
+              
+                        <h3 id="m_h6">Login</h3>
+
+                        <form id="form-rev" action="/login" method="post">
+                        
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="senha" placeholder="Senha">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="btn-cad" class="btn btn-primary col-sm-6">Entrar</button>
+                        </div>
+    
+                      </form>
+                  </div>
+                </div>
+    </div>
+            
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+        $("#celular").mask("(00) 00000-0000");
+        $("#cpf").mask("000.000.000-00");
+    </script>
+</body>
+</html>

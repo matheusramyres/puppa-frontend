@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i|Roboto');
+body{
+	padding: 0;
+	margin: 0;
+
+}
+footer{
+	padding-top: 60px;
+	background-color:#077A91;
+}
+
+h2{
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 24px;
+	text-align: center;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+a,i{
+	color: #fff;
+	font-family: 'Roboto';
+	text-align: center;
+}
+.paragraph{
+	color: #fff;
+	text-align: center;
+	
+	
+}
+.hr{
+	    border-top: 1px solid rgb(255, 255, 255);
+		width: 10%;
+}
+ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	padding-bottom: 30px;
+}
+li{
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+}
+a{
+	padding: 5px;
+	text-transform: capitalize;
+	font-size: 18px;
+}
+a:hover{
+	text-decoration: none;
+}
+
+.fa{
+	
+	padding-top: 10px;
+	color: #fff;
+	font-size: 20px;
+	display: inline-block;
+	text-align: center;
+	display: inline-block;
+	margin: 0 auto;
+}
+.download-icon .fa{
+	font-size: 50px;
+	padding: 10px;
+}
+.social .fa{
+	padding-top: 30px;
+	font-size: 30px;
+	transition: .9s;
+}
+.social .fa:hover{
+	transition: 1s;
+	transform: scale(1.1);
+	color: #ddd;
+}
+@media(max-width: 768px){
+	footer{
+		height: auto !important;
+	}
+	h2{
+		font-size: 30px;
+	}
+}

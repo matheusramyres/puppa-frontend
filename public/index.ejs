@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/img/Olhinho-azul.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Effra"/>
+    <link href="/css/Comic.css" rel='stylesheet'/>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    
+    <title>Puppa B&K</title>
+</head>
+<body>
+    <div id="container">
+        <header class="row">
+            <div class="navbar navbar-expand-md navbar-dark bd-navbar col-sm-12" style="background-color:#676AA4; padding:20px;">
+                <b style="font-size:2vw; color: rgb(255, 255, 255); margin-left: 43%; text-align: center;">PUPPA</b>
+                <img src="/img/Olho.png" width="45" height="35" style="margin-left: 0.3%;"/>
+                <a href="/login" class="btn btn-primary btn-private" style="background-color: #77A3AD; color: white; border-color: #77A3AD;">Área privada</a>
+               
+            </div>
+        </header>
+
+        <section>
+            <div class="row">
+                
+                <img src="/img/original.jpeg" height="630px"  class="col-sm-12" alt="background" id="img_background"> 
+                
+                <nav class="offset-sm-1 col-sm-10 offset-sm-1" style="margin-top: 2%;">
+                    <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+                      <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#nav-sobre" role="tab" aria-controls="nav-home" aria-selected="true">Sobre</a>
+                      <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-cadastro" role="tab" aria-controls="nav-profile" aria-selected="false">Cadastrar Revendedor</a>
+                      <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-contato" role="tab" aria-controls="nav-contact" aria-selected="false">Fale Conosco</a>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-sobre" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <h1 style="text-align: center;">Sobre a Puppa</h1>
+                        <img src="/img/sobre.png" id="img_sobre"/>
+                        <p>Puppa Baby e Kids foi idealizada durante o ano de 2020.</p> 
+                        <p>Enquanto o mundo paralisava, surgiu a idéia de oferecer ao mercado um 
+                        produto de qualidade com preço acessível e com uma missão fundamental:
+                        Criar uma rede comercial e digital que possibilitasse um retorno financeiro
+                        para todo o processo logístico empresa-revenda-cliente-empresa.</p>
+                        
+                        <p>Você não precisa ter uma loja para revender os produtos da Puppa B&K. 
+                        Basta se cadastrar para receber o material necessário e dar início a essa nova 
+                        trajetória.</p>
+                        
+                        <p>Mas se você possui um pequeno negócio e deseja comercializar os nossos 
+                        produtos, temos uma condição super especial para tornar isso possível,
+                        inclusive através de coleção exclusiva levando a sua marca na etiqueta.</p>
+                        
+                        <p>A marca Puppa baby e kids foi planejada com o menor número possível de 
+                        atravessadores, possibilitando assim, uma maior margem de lucro a ser
+                        repassado aos nossos representantes e consequentemente, ao cliente final, 
+                        que poderá usufruir de um produto de qualidade com preço mais justo.</p>
+                        
+                        <p>Somos uma empresa especializada em roupinhas e acessórios de dormir
+                        para bebês e crianças até 14 anos.</p>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-cadastro" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <h1 style="text-align: center; margin-bottom: 2%;">Cadastre-se</h1>
+                        <p style="text-align: center;">Venha já fazer parte da nossa equipe, é só clicar e se cadastrar!</p>
+                        <a href="/register" class="btn btn-primary" style="background-color:#676AA4; color: white; border-color: #676AA4; margin-left: 45%;">Cadastre-se</a>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-contato" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <h1 style="text-align: center; margin-bottom: 2%;">Contato</h1>
+                        <!--Box de login-->
+                        <div class="offset-sm-3 col-sm-6 offset-sm-3">
+                            <div class="col-sm-12">
+                        
+                                <form id="form-rev" action="/sendemail" method="post">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="nome" placeholder="Nome" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" placeholder="E-mail" required>
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="assunto" placeholder="Assunto" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="descricao">Descrição</label>
+                                        <textarea class="form-control" name="descricao" id="descricao" rows="5" required></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <button type="submit" id="btn-cad" class="btn btn-primary col-sm-6" style="background-color: #676AA4; border-color: #676AA4;">Enviar</button>
+                                    </div>
+            
+                                </form>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <hr style="width: 80%; margin-left: 10%; margin-top: 5%; margin-bottom: 2%;">
+                    <p style="font-family: Comic Neue; font-size: 18px; text-align: center;" class="offset-sm-4 col-sm-4 offset-sm-4">
+                        <b>Siga </b>nosso instagram<a href="https://instagram.com/mundopuppa" style="font-family: Comic Neue; text-decoration: none; color:#565cc5;">@mundopuppa</a>
+                    </p>
+                    
+                  </div>
+
+               
+            </div>
+                
+                
+                
+                
+        
+        </section>
+        
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+</body>
+</html>
